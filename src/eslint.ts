@@ -33,8 +33,8 @@ module.exports = {
     'react/jsx-one-expression-per-line': 0,
     'generator-star-spacing': 0,
     'function-paren-newline': 0,
-    'import/no-unresolved': [2, { ignore: ['^@/', '^umi/'] }],
-    'import/order': 'warn',
+    'import/no-unresolved': [2, { ignore: ['^~/', '^umi/'] }],
+    'import/order': ["warn", {"groups": ["index", "sibling", "parent", "internal", "external", "builtin"], "newlines-between": 'always'}],
     'import/no-extraneous-dependencies': [
       2,
       {
@@ -42,6 +42,7 @@ module.exports = {
         devDependencies: [
           '**/tests/**.{ts,js,jsx,tsx}',
           '**/_test_/**.{ts,js,jsx,tsx}',
+          '**/__tests__/**.{ts,js,jsx,tsx}',
           '/mock/**/**.{ts,js,jsx,tsx}',
           '**/**.test.{ts,js,jsx,tsx}',
           '**/_mock.{ts,js,jsx,tsx}',
