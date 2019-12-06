@@ -1,20 +1,20 @@
 {
   "name": "@gdjiami/fabric",
-  "version": "2.0.0-beta.3",
-  "description": "A collection of configuration files containing prettier, eslint, stylelint",
+  "version": "1.0.0",
+  "description": "mygzb frontend eslint config",
   "main": "dist/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsc",
     "prepublishOnly": "npm run build"
   },
   "files": [
     "dist"
   ],
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/umijs/fabric"
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org",
+    "access": "public"
   },
+  "repository": "https://github.com/GDJiaMi/fabric.git",
   "keywords": [
     "eslint",
     "prettier",
@@ -23,12 +23,9 @@
     "design",
     "pro"
   ],
-  "author": "qixian.cs@outlook.com",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/umijs/umi-fabric/issues"
-  },
-  "homepage": "https://github.com/umijs/umi-fabric#readme",
+  "author": "Jerry Wen<597796340@qq.com>",
+  "license": "MIT",
+  "homepage": "https://github.com/GDJiaMi/fabric#readme",
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "^1.4.2",
     "@typescript-eslint/parser": "^2.7.0",
