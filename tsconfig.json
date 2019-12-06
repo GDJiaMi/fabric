@@ -6,6 +6,7 @@
     "lib": ["esnext", "dom"],
     "baseUrl": ".",
     "jsx": "react",
+    "skipLibCheck": true,
     "allowSyntheticDefaultImports": true,
     "moduleResolution": "node",
     "forceConsistentCasingInFileNames": true,
